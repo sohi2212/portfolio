@@ -1,0 +1,54 @@
+.content ol {
+    overflow: hidden;
+    height: 5rem;
+    line-height: 5rem;
+
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.content ol li span {
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    white-space: nowrap;
+
+    border-right: 2px solid white;
+    display: inline-block;
+
+    animation: cursor .8s step-end infinite,
+        typing 3s steps(19) infinite alternate;
+}
+
+.item {
+    animation: slide var(--duration) steps(var(--steps)) infinite;
+    display: inline-block;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+
+    0%,
+    10% {
+        width: 0%;
+    }
+
+    70%,
+    100% {
+        width: 101%;
+    }
+}
+
+@keyframes slide {
+    100% {
+        transform: translateY(calc(-100% * var(--steps)));
+    }
+}

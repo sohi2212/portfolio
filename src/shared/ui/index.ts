@@ -1,0 +1,5 @@
+export { useParallaxHover } from './animation/useParalaxHover'
+export { BurgerMenu } from './burger-menu'
+export { Typewriter } from './typewriter'
+export { Icon } from './icon'
+export { Slider } from './slider'

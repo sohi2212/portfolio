@@ -1,0 +1,33 @@
+@media (max-width: 970px) {
+    .toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 32px;
+        height: 24px;
+        cursor: pointer;
+
+    }
+
+    .bar {
+        height: 3px;
+        background: #ffffff;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .input:checked+.toggle .bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .input:checked+.toggle .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .input:checked+.toggle .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+}
+
+.input {
+    display: none;
+}

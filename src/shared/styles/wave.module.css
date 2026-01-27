@@ -1,0 +1,37 @@
+.wrapper {
+    width: 100%;
+    height: 120px;
+    background: #242424;
+    overflow: hidden;
+    line-height: 0;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    transform: rotate(var(--deg));
+}
+
+.wave {
+    fill: #fff;
+    animation: waveMove 6s ease-in-out infinite;
+}
+
+@keyframes waveMove {
+    0% {
+        d: path("M0,80 C240,40 480,120 720,100 960,80 1200,40 1440,80 L1440,0 L0,0 Z"
+            );
+    }
+
+    50% {
+        d: path("M0,100 C240,120 480,40 720,60 960,80 1200,120 1440,100 L1440,0 L0,0 Z"
+            );
+    }
+
+    100% {
+        d: path("M0,80 C240,40 480,120 720,100 960,80 1200,40 1440,80 L1440,0 L0,0 Z"
+            );
+    }
+}

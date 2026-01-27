@@ -1,0 +1,10 @@
+.nav__item {
+    font-size: 18px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 600ms ease;
+
+    &&:hover {
+        background-color: rgba(82, 93, 255, 0.5);
+    }
+}

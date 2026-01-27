@@ -1,0 +1,37 @@
+.frame img {
+    width: 100%;
+    object-fit: cover;
+    mask: url(/clip.webp) no-repeat center / contain;
+    -webkit-mask: url(/clip.webp) no-repeat center / contain;
+
+    will-change: transform;
+
+    position: relative;
+    top: -70px;
+}
+
+.frame {
+    width: 628px;
+
+    perspective: 1000px;
+    position: relative;
+    order: 2;
+}
+
+@media (max-width: 970px) {
+    .frame {
+        width: 480px;
+    }
+}
+
+@media (max-width: 560px) {
+    .frame {
+        width: 400px;
+    }
+}
+
+@media (max-width: 470px) {
+    .frame {
+        width: 300px;
+    }
+}

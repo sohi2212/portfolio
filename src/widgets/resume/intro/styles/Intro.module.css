@@ -1,0 +1,110 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    margin: 80px auto 0 auto;
+    width: 1500px;
+    height: 890px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0 55px;
+
+    flex-direction: column;
+    position: relative;
+}
+
+.container>* {
+    min-width: 0;
+}
+
+.container p {
+    grid-column: 1/2;
+    grid-row: 2;
+
+    position: relative;
+    top: -220px;
+    width: 500px;
+
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(110, 110, 110);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.my__name {
+    font-size: 1.7em;
+}
+
+.my__name::before {
+    content: '';
+    height: 2px;
+    width: 122px;
+    display: block;
+    background-color: var(--blue);
+    position: absolute;
+    left: -150px;
+    top: 110px;
+}
+
+.container h1 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+@media (max-width: 1460px) {
+    .container {
+        display: flex;
+        height: 1000px;
+        flex-direction: column;
+        gap: 25px 0;
+
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .container p {
+        top: 0;
+        order: 0;
+    }
+
+    .container h1 {
+        font-size: 3rem;
+    }
+
+    .my__name::before {
+        top: 80px;
+        left: -110px;
+
+        width: 90px;
+    }
+}
+
+@media (max-width: 560px) {
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        gap: 5px;
+
+        width: 100%;
+        max-width: 300px;
+        margin: 80px 0 0 60px;
+    }
+
+    .container p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 0.8rem;
+        overflow-wrap: break-word;
+        margin: 0 auto 50px;
+    }
+
+    .my__name::before {
+        top: 55px;
+        width: 90px;
+    }
+}

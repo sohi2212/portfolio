@@ -1,0 +1,26 @@
+.item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-items: center;
+}
+
+.item__icon {
+    flex-shrink: 0;
+}
+
+.item__text {
+    font-size: 3rem;
+    font-weight: 800;
+    color: black;
+}
+
+.accent {
+    color: var(--blue);
+}
+
+@media (max-width: 1560px) {
+    .item__text {
+        font-size: 1.7rem;
+    }
+}

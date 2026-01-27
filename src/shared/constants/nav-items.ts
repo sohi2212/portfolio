@@ -1,0 +1,1 @@
+export const NavItems = ['about me', 'skills', 'projects', 'life path', 'contact']

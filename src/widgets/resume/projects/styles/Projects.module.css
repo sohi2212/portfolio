@@ -1,0 +1,28 @@
+.visible {
+    opacity: 1 !important;
+    transition: all 1s;
+    top: 0 !important;
+}
+
+.projects {
+    background-color: white;
+    height: 1280px;
+    position: relative;
+    color: black;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    opacity: 0;
+    position: relative;
+    top: 60px;
+
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
