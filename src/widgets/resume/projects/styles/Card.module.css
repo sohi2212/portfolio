@@ -90,34 +90,17 @@
 
 @media (max-width: 900px) {
     .card {
-        width: 200px;
         padding: 12px;
-        gap: 10px;
+        min-width: 160px;
+        min-height: 320;
+        gap: 5px;
+
+        &:hover {
+            box-shadow: none;
+        }
     }
 
     .card img {
         aspect-ratio: 3 / 3;
-    }
-}
-
-@media (max-width: 600px) {
-    .card {
-        max-width: 320px;
-    }
-
-    .card h5 {
-        text-align: center;
-    }
-
-    .card a {
-        align-self: center;
-    }
-}
-
-@media (max-width: 550px) {
-    .card {
-        min-width: 160px;
-        gap: 5px;
-        overflow-x: hidden;
     }
 }
