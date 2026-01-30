@@ -1,22 +1,28 @@
 import { Wave } from "../../../shared/ui/wave"
-import { AboutMe } from "../../../widgets/resume/aboutMe"
-import { Header } from "../../../widgets/resume/header"
-import { Intro } from "../../../widgets/resume/intro"
-import { Projects } from "../../../widgets/resume/projects"
-import { Skills } from "../../../widgets/resume/skills"
+import { AboutSection } from "./sections/aboutMe"
+import { ContactSection } from "./sections/contact"
+import { Header } from "./sections/header"
+import { IntroSection } from "./sections/intro"
+import { LifeSection } from "./sections/life"
+import { ProjectSection } from "./sections/projects"
+import { SkillSection } from "./sections/skills"
 
 export const ResumePage = () => {
     return (
         <>
             <Header />
             <main>
-                <Intro />
+                <IntroSection />
                 <Wave />
-                <AboutMe />
+                <AboutSection />
                 <Wave rotate_deg="0" />
-                <Skills />
+                <SkillSection />
                 <Wave />
-                <Projects />
+                <ProjectSection />
+                <Wave rotate_deg="0" />
+                <LifeSection />
+                <Wave />
+                <ContactSection />
             </main>
         </>
 

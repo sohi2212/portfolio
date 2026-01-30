@@ -1,0 +1,1 @@
+export { LifeSection } from './view/Life'

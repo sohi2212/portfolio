@@ -1,0 +1,36 @@
+.timeline__date {
+    color: #6e6e6e;
+    font-size: 12px;
+    top: -30px;
+
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+    position: absolute;
+}
+
+.timeline__title {
+    color: #c4c3c3;
+    font-size: 20px;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.timeline__subtitle {
+    color: #c4c3c3;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.timeline__description {
+    color: #6e6e6e;
+    font-size: 16px;
+    font-weight: 300;
+}
