@@ -1,5 +1,5 @@
 import { useOnScreen } from '../../../../../../shared/ui'
-import styles from '../styles/contact.module.css'
+import styles from '../styles/Contact.module.css'
 import { ContactCard } from './ContactCard'
 
 export const ContactSection = () => {
