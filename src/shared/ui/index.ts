@@ -1,4 +1,5 @@
 export { useParallaxHover } from './animation/useParalaxHover'
+export { useOnScreen } from './animation/useOnScreen'
 export { BurgerMenu } from './burger-menu'
 export { Typewriter } from './typewriter'
 export { Icon } from './icon'
