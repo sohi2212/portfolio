@@ -1,8 +1,7 @@
 import { useState } from "react"
 import styles from '../styles/Header.module.css'
 import { NavItems } from "../../../../../../shared/config"
-import { NavItem } from "../../../../../../shared/ui/nav-item"
-import { BurgerMenu } from "../../../../../../shared/ui"
+import { BurgerMenu, NavItem } from "../../../../../../shared/ui"
 
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
