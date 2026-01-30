@@ -12,12 +12,13 @@ export const useOnScreen = () => {
                 threshold: 0.1
             })
 
-        if (ref.current) {
-            observer.observe(ref.current)
-        }
+        const node = ref.current
+        if (!node) return
+
+        observer.observe(node)
 
         return () => {
-            if (ref.current) observer.unobserve(ref.current)
+            observer.unobserve(node)
         }
     }, [])
 
