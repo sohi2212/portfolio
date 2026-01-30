@@ -10,7 +10,6 @@
 }
 
 .content ol li span {
-    font-weight: 600;
     -webkit-text-fill-color: transparent;
     background-color: rgb(255, 255, 255);
     -webkit-background-clip: text;

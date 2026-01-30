@@ -4,7 +4,12 @@
     cursor: pointer;
     transition: all 600ms ease;
 
-    &&:hover {
+    & a {
+        color: white;
+        text-decoration: none;
+    }
+
+    &:hover {
         background-color: rgba(82, 93, 255, 0.5);
     }
 }
